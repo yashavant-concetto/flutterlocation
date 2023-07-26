@@ -307,10 +307,10 @@
 
 - (void)locationManager:(CLLocationManager *)manager
      didUpdateLocations:(NSArray<CLLocation *> *)locations {
-  if (self.waitNextLocation > 0) {
+(*   if (self.waitNextLocation > 0) {
     self.waitNextLocation -= 1;
     return;
-  }
+  } *)
   CLLocation *location = locations.lastObject;
 
   NSTimeInterval timeInSeconds = [location.timestamp timeIntervalSince1970];
